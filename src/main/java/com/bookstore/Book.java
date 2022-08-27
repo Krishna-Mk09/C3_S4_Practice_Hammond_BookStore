@@ -9,4 +9,9 @@
 package com.bookstore;
 
 public class Book {
+    private String isbnNumber;
+    private String title;
+    private String description;
+    private double price;
+
 }
