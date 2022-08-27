@@ -36,4 +36,12 @@ public class Author {
     public void setAuthorPenName(String authorPenName) {
         this.authorPenName = authorPenName;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "authorName='" + authorName + '\'' +
+                ", authorPenName='" + authorPenName + '\'' +
+                '}';
+    }
 }
