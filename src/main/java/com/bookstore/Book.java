@@ -13,7 +13,16 @@ public class Book {
     private String title;
     private String description;
     private double price;
+    Author author;
 
     public Book() {
+    }
+
+    public Book(String isbnNumber, String title, String description, double price, Author author) {
+        this.isbnNumber = isbnNumber;
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.author = author;
     }
 }
