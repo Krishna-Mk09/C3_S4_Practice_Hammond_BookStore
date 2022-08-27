@@ -12,4 +12,12 @@ public class Author {
     private String authorName;
     private String authorPenName;
 
+
+    public Author() {
+    }
+
+    public Author(String authorName, String authorPenName) {
+        this.authorName = authorName;
+        this.authorPenName = authorPenName;
+    }
 }
