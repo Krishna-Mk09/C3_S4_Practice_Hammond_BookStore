@@ -12,7 +12,7 @@ public class BookImpl {
     public static void main(String[] args) {
         Book book = new Book("123453", "THE ENCOUNTER", "this book has a very good comedy", 200.0);
         Author author = new Author("vamshi", "SANTOOR PEN", book);
-        System.out.println(author.toString());
+        System.out.println(author);
         book.displayDetails();
 
     }

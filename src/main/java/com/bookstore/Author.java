@@ -9,9 +9,9 @@
 package com.bookstore;
 
 public class Author {
+    Book book;
     private String authorName;
     private String authorPenName;
-    Book book;
 
 
     public Author(String authorName, String authorPenName, Book book) {
@@ -46,10 +46,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "authorName='" + authorName + '\'' +
-                ", authorPenName='" + authorPenName + '\'' +
-                ", book=" + book +
-                '}';
+        return "Author{" + "authorName='" + authorName + '\'' + ", authorPenName='" + authorPenName + '\'' + ", book=" + book + '}';
     }
 }
