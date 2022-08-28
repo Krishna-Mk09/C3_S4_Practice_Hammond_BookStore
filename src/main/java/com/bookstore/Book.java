@@ -13,17 +13,17 @@ public class Book {
     private String title;
     private String description;
     private double price;
-    private String author;
+
 
     public Book() {
     }
 
-    public Book(String isbnNumber, String title, String description, double price, String author) {
+    public Book(String isbnNumber, String title, String description, double price) {
         this.isbnNumber = isbnNumber;
         this.title = title;
         this.description = description;
         this.price = price;
-        this.author = author;
+
     }
 
     public String getIsbnNumber() {
@@ -58,21 +58,24 @@ public class Book {
         this.price = price;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = String.valueOf(author);
-    }
 
     public void displayDetails() {
         System.out.println("The price of the book is : " + getPrice());
-        System.out.println("The author name of the book is : " + getAuthor());
         System.out.println("Description of the book is : " + getDescription());
         System.out.println("Title of the book : " + getTitle());
         System.out.println("ISBN number of the book is : " + getIsbnNumber());
 
+
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "isbnNumber='" + isbnNumber + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                '}';
 
     }
 }

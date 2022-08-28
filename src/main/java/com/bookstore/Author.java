@@ -11,14 +11,13 @@ package com.bookstore;
 public class Author {
     private String authorName;
     private String authorPenName;
+    Book book;
 
 
-    public Author() {
-    }
-
-    public Author(String authorName, String authorPenName) {
+    public Author(String authorName, String authorPenName, Book book) {
         this.authorName = authorName;
         this.authorPenName = authorPenName;
+        this.book = book;
     }
 
     public String getAuthorName() {
@@ -37,11 +36,20 @@ public class Author {
         this.authorPenName = authorPenName;
     }
 
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
     @Override
     public String toString() {
         return "Author{" +
                 "authorName='" + authorName + '\'' +
                 ", authorPenName='" + authorPenName + '\'' +
+                ", book=" + book +
                 '}';
     }
 }
