@@ -8,18 +8,23 @@
 
 package com.bookstore;
 
+/**
+ * The Author class has a Book object, a String for the author's name, and a String for the author's pen name
+ */
 public class Author {
     Book book;
     private String authorName;
     private String authorPenName;
 
 
+    // This is a constructor. It is a special method that is called when an object is created.
     public Author(String authorName, String authorPenName, Book book) {
         this.authorName = authorName;
         this.authorPenName = authorPenName;
         this.book = book;
     }
 
+    // This is a getter and setter method.
     public String getAuthorName() {
         return authorName;
     }
@@ -45,6 +50,7 @@ public class Author {
     }
 
     @Override
+    // A method that returns a string representation of the object.
     public String toString() {
         return "Author{" + "authorName='" + authorName + '\'' + ", authorPenName='" + authorPenName + '\'' + ", book=" + book + '}';
     }

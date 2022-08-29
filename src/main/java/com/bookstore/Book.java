@@ -8,6 +8,9 @@
 
 package com.bookstore;
 
+/**
+ * A Book has an isbnNumber, a title, a description, and a price.
+ */
 public class Book {
     private String isbnNumber;
     private String title;
@@ -18,6 +21,7 @@ public class Book {
     public Book() {
     }
 
+    // This is a constructor.
     public Book(String isbnNumber, String title, String description, double price) {
         this.isbnNumber = isbnNumber;
         this.title = title;
@@ -26,6 +30,7 @@ public class Book {
 
     }
 
+    // This is called getter and setter methods.
     public String getIsbnNumber() {
         return isbnNumber;
     }
@@ -59,6 +64,9 @@ public class Book {
     }
 
 
+    /**
+     * The function displays the details of the book
+     */
     public void displayDetails() {
         System.out.println("The price of the book is : " + getPrice());
         System.out.println("Description of the book is : " + getDescription());
@@ -68,6 +76,11 @@ public class Book {
 
     }
 
+    /**
+     * The toString() method returns a string representation of the object
+     *
+     * @return The isbnNumber, title, description, and price of the book.
+     */
     @Override
     public String toString() {
         return "Book{" +
